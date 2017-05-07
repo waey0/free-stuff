@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var firstLabel: UILabel!
-
+    
+    var count = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,7 +25,12 @@ class ViewController: UIViewController {
 
 
     @IBAction func firstButton(_ sender: Any) {
-        firstLabel.text = "hikk"
+        if (count) {
+            firstLabel.text = "hikk"
+        } else {
+            firstLabel.text = "byekk"
+        }
+        count = !count
     }
 }
 
