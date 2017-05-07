@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var firstLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +22,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func firstButton(_ sender: Any) {
+        firstLabel.text = "hikk"
+    }
 }
 
